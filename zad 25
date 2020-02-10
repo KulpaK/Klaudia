@@ -1,0 +1,13 @@
+def checkList(listOfElements):
+    return all(isinstance(element, (int, float)) for element in listOfElements)
+
+
+def skewness(listOfNumbers):
+    try:
+        assert checkList(listOfNumbers)
+        average = sum(listOfNumbers)/len(listOfNumbers)
+        return round(sum(map(lambda x: (x-average)**2 ,listOfNumbers))/len(listOfNumbers),3)
+    
+    except AssertionError:
+        print("Niepoprawny typ elementów listy.")
+    
