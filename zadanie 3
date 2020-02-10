@@ -1,0 +1,10 @@
+#3 Utwórz skrypt do zamiany kilometrów na mile i na odwrót
+# 1 mila = 1,609km  1km = 0,621 mili
+print("Oto zamiana kilometrów na mile oraz mili na kilometry.Wybierz liczbę")
+a=int(input())
+print("zamiana kilometrów na mile")
+print(a*0.621)
+print("zamiana mili na kilometry")
+print(a*1.609)
+
+
