@@ -1,0 +1,13 @@
+import math
+print("Obliczanie symbolu Newtona n/k")
+n=int(input("wybierz liczbę n"))
+k=int(input("wybierz liczbe k"))
+if(0<=k<=n):
+    print((math.factorial(n))/(math.factorial(k)*math.factorial(n-k)))
+elif(k,n<0):
+    print("k i n muszą być większe lub równe 0")
+elif(n<k):
+    print("k musi być mniejsze od n")
+else:
+    print("ups")
+    
