@@ -1,0 +1,9 @@
+def rec_fib(n):
+    if n < 2:
+        return 1
+    else:
+        return rec_fib(n-1) + rec_fib(n-2)
+
+
+def fibb(n):
+    return (rec_fib(a) for a in range(n))
