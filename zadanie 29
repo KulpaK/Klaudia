@@ -1,0 +1,27 @@
+lista1x = [2,3,9,7]
+lista2y = [6,1,12,4]
+wynik1x=[]
+wynik2y=[]
+
+for k in range(len(lista1x)):
+    wynik1x.append(lista1x[k]*lista1x[k])
+
+for i in range(len(lista1x)):
+    wynik2y.append(lista1x[i] * lista2y[i])
+
+h = sum(wynik1x)
+j = sum(wynik2y)
+i = sum(lista2y)
+l = sum(lista1x)
+n=4
+
+dzialanie1=(n*j)-(l*i)
+dzialanie2=(n*h)-(l*l)
+b=(dzialanie1/dzialanie2)
+
+lol=(i/n)
+wow=(l/n)
+
+a=lol-(b*wow)
+print(a)
+print(b)
