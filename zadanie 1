@@ -1,0 +1,12 @@
+def Dzielniki(a):
+  wynik = []
+  for i in range(1, a // 2 + 1):
+    if (a % i == 0):
+      wynik.append(i)
+  if (a > 1):
+    wynik.append(a)
+  return wynik
+a = int(input("Podaj liczbę\n a = "))
+wynik = Dzielniki(a)
+for x in wynik:
+  print(x, end=" ")
