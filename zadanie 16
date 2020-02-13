@@ -1,0 +1,13 @@
+for i in range(0, ile_liczb):
+    x.append(i+1)
+    y.append(randint(0, 100))
+
+print("Dla argumentow:",x,"i wartosci",y,"utworza wykres w osobnym pliku o nazwie 'wykres 1'.")
+#formatowanie wykresu
+pl.plot(x,y,"-",color='blue', linewidth = 1.5)
+pl.title("Wykres dla losowych wartosci y")
+pl.xlabel("Wartosci x")
+pl.ylabel("Wartosci y")
+pl.legend(["y(x)"])
+pl.grid(color='gray',linestyle='--', linewidth = 0.5)
+pl.savefig('wykres1.png')
